@@ -1,20 +1,19 @@
 import React from "react";
 
 function Expenses() {
+  const expenseDate = new Date(2022, 11, 25);
+  const expenseTitle = "car Insurance";
+  const expenseAmount = 5000;
+  const LocationOfExpenditure = "Automobiles";
   return (
     <div style={{ backgroundColor: "green" }}>
       <div className="food-item">
-        <h2 className="food-item-h2">
-          Food <span className="food-item-span">RS 10</span>
-        </h2>
+        <div>{expenseDate.toISOString()}</div>
+        <h2> {expenseTitle}</h2>
+        <div>{expenseAmount}</div>
       </div>
-      <div className="petrol-item">
-        <h2>Petrol </h2>
-        <span>RS- 100</span>
-      </div>
-      <div className="movie-item">
-        <h2>Movies </h2>
-        <span>RS- 500</span>
+      <div className="location">
+        <h2>{LocationOfExpenditure}</h2>
       </div>
     </div>
   );

@@ -4,8 +4,8 @@ import Expenses from "./components/Expenses";
 function App() {
   return (
     <div className="App">
-      <ExpenseItem />
-      <Expenses />
+      {<ExpenseItem />}
+      {<Expenses />}
     </div>
   );
 }
