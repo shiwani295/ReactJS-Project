@@ -3,18 +3,14 @@ function Props(props) {
   return (
     <>
       <div>Location Of Expenditure - {props.locationexpenditure}</div>
-      {props.MultipleData.map((item) => {
-        console.log(item);
-
+      {props.ArrExpenseData.map((ExpItem) => {
         return (
           <>
-            <div>{item.title}</div>
-            <div>{item.id}</div>
+            <div>{ExpItem.title}</div>
+            <div>{ExpItem.amount}</div>
           </>
         );
       })}
-
-      <div> </div>
     </>
   );
 }
